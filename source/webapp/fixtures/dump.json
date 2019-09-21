@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.register",
+  "pk": 5,
+  "fields": {
+    "author": "Donald Trump",
+    "email": "trumpusa@gmail.com",
+    "text": "Very good!",
+    "create": "2019-09-21T06:12:17.627Z",
+    "update": "2019-09-21T06:12:17.628Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.register",
+  "pk": 6,
+  "fields": {
+    "author": "Robert Kiyosaki",
+    "email": "robert198687@gmail.com",
+    "text": "The rooms are dirty, the food is bad, did not like it.",
+    "create": "2019-09-21T06:14:33.335Z",
+    "update": "2019-09-21T06:18:19.929Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.register",
+  "pk": 8,
+  "fields": {
+    "author": "John Taylor",
+    "email": "Taylor1980@gmail.com",
+    "text": "Thank you very much, I liked everything!",
+    "create": "2019-09-21T06:16:23.763Z",
+    "update": "2019-09-21T06:16:23.763Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.register",
+  "pk": 9,
+  "fields": {
+    "author": "Ann James",
+    "email": "James@mail.ru",
+    "text": "Terrible rooms, staff rude.",
+    "create": "2019-09-21T06:18:05.643Z",
+    "update": "2019-09-21T06:18:05.643Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.register",
+  "pk": 10,
+  "fields": {
+    "author": "Jeremy Jackson",
+    "email": "Jackson7896@gmail.com",
+    "text": "The service is super, the view from Onk is gorgeous, the food is super!",
+    "create": "2019-09-21T06:20:31.248Z",
+    "update": "2019-09-21T06:20:31.248Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$EzviLGF8jZ2o$5On4sHg8MO2t1uNrWNTFwI/rekVJQiuOriYzliswivQ=",
+    "last_login": "2019-09-21T05:50:25.296Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T05:27:17.629Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
