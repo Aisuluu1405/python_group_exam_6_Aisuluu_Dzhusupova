@@ -2,14 +2,15 @@
 
 {% block content %}
     <h1>Welcome our guest book!</h1>
-{% for register in registers %}
-    <div class="card text-left">
-            <div class="card-header">{{ register.author }} ({{ register.email }}</div>
+    {% for register in registers %}
+        <div class="card">
+            <div class="card-header text-left">
+                <div class="card-name">{{ register.author }} (Email: {{ register.email }} )</div>
+                <a href="{% url 'delete_register' register.pk %}"><i class="fas fa-trash-alt"></i></a>
+                <a href="{% url 'edit_register' register.pk %}"><i class="fas fa-edit"></i></a>
+            </div>
             <div class="card-body">
                 <p class="card-text">{{ register.text }}.</p>
-{#                <p><a href="{% url '' %}" class="btn btn-primary">Edit</a></p>#}
-                <p><a href="" class="btn btn-success">Delete</a>
-                <a href="{% url 'edit_register' register.pk %}" class="btn btn-success">Edit</a></p>
             </div>
         </div>
     {% endfor %}

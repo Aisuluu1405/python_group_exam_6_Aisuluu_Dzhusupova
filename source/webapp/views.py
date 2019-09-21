@@ -48,3 +48,11 @@ def register_edit_view(request, pk):
         else:
             return render(request, 'register_edit.html', context={'form': form, 'register': register})
 
+
+def register_delete_view(request, pk):
+    register = get_object_or_404(Register, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'register_delete.html', context={'register': register})
+    elif request.method == 'POST':
+        register.delete()
+    return redirect('index')

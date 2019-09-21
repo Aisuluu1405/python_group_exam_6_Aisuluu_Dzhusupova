@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Delete Register{% endblock %}
+
+{% block content %}
+    <h1 class="delete">Are you sure want to delete register "{{ register}}"?</h1>
+    <form method="POST" action="{% url "delete_register" register.pk %}" class="text-center">
+        {% csrf_token %}
+        <p>
+            <input type="submit" value="Yes, delete" class="btn btn-success">
+            <a href="{% url 'index' %}" class="btn btn-success">No, cancel</a>
+        </p>
+    </form>
+{% endblock %}
