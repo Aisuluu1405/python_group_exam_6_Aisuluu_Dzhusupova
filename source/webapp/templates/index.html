@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome our guest book!</h1>
+{% for register in registers %}
+    <div class="card text-left">
+            <div class="card-header">{{ register.author }} ({{ register.email }}</div>
+            <div class="card-body">
+                <p class="card-text">{{ register.text }}.</p>
+{#                <p><a href="{% url '' %}" class="btn btn-primary">Edit</a></p>#}
+                <p><a href="" class="btn btn-primary">Delete</a>
+                <a href="" class="btn btn-primary">Edit</a></p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
