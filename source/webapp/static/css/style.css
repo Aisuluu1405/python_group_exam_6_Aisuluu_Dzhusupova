@@ -42,18 +42,23 @@ body{
 }
 .card-body{
     background-color: springgreen;
-
 }
 .card{
     display: flex;
     margin: 20px 0;
-
+    border-radius: 8px;
 }
 .card-header{
     font-size: 24px;
-    text-transform: uppercase;
     background-color: #63ce6b;
     font-weight: bold;
+    display: flex;
+}
+.card-name{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    justify-content: flex-start;
 }
 .card-text{
     font-size: 20px;
@@ -70,7 +75,8 @@ h1{
     border-radius: 5px;
     width: 120px;
     font-weight: bold;
-    margin-top: 40px;
+    margin: 30px 20px 10px 20px;
+
 }
 .required{
     font-weight: bold;
@@ -99,6 +105,15 @@ h1{
 .fields{
     font-size: 20px;
 }
-
+.delete{
+    font-size: 30px;
+    color: #b21f2d;
+}
+.fas {
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    justify-content: flex-end;
+}
 
 
