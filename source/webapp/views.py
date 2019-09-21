@@ -25,3 +25,26 @@ def register_add_view(request, *args, **kwargs):
             return redirect('index')
         else:
             return render(request, 'register_add.html', context={'form': form})
+
+
+def register_edit_view(request, pk):
+    register = get_object_or_404(Register, pk=pk)
+    if request.method == 'GET':
+        form = RegisterForm(data={
+            'author': register.author,
+            'email': register.email,
+            'text': register.text,
+        })
+        return render(request, 'register_edit.html', context={'form': form, 'register': register})
+    elif request.method == 'POST':
+        form = RegisterForm(data=request.POST)
+        if form.is_valid():
+            data = form.cleaned_data
+            register.author = data['author']
+            register.email = data['email']
+            register.text = data['text']
+            register.save()
+            return redirect('index')
+        else:
+            return render(request, 'register_edit.html', context={'form': form, 'register': register})
+

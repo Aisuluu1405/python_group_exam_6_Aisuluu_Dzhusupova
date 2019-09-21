@@ -50,13 +50,13 @@ body{
 
 }
 .card-header{
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     background-color: #63ce6b;
     font-weight: bold;
 }
 .card-text{
-    font-size: 15px;
+    font-size: 20px;
     color: black;
 }
 h1{
@@ -65,5 +65,40 @@ h1{
     padding:100px 0 60px 0;
     text-align: center;
 }
+.btn{
+    font-size: 18px;
+    border-radius: 5px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.required{
+    font-weight: bold;
+    color: #bf1f6d;
+}
+.form-error {
+    color: red;
+    font-size: 18px;
+    margin: 5px 0 0 0
+}
+
+.field-error {
+    border: solid 1px red;
+    box-shadow: red 0 0 3px;
+}
+.form-control {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border: solid 1px lightgray;
+    box-sizing: border-box;
+    background: white;
+}
+.fields{
+    font-size: 20px;
+}
+
 
 
